@@ -1,0 +1,688 @@
+html {
+    scroll-behavior: smooth;
+  }
+  
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+footer{
+    margin: 0;
+}
+#navbar{
+    overflow: hidden;
+    background-color: #2461b2;
+    display: flex;
+    justify-content: space-between;
+}
+
+.nav-wrapper{
+    align-items: center;
+}
+
+.logo{
+    margin-left: 10;
+    color: white;
+}
+.nav-wrapper{
+    position: relative;
+}
+
+#navbar ul{
+    list-style-type: none;
+    margin: 0;
+    padding:0px;
+    text-align: center;
+}
+
+#navbar li {
+    display: inline;
+    margin-right: 20px;
+    padding:0px 15px 0px;
+}
+
+#navbar a{
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    transition: .3s ease-in-out;
+}
+
+#navbar a:hover {
+    border-bottom: 2.5px solid white;
+    padding: 8px;
+}
+
+.left{
+    display: flex;
+    margin-left: 50px;
+}
+
+.menu{
+    display: flex;
+    margin-right: 100px;
+}
+
+/* ************banner************* */
+
+.banner{
+    background-size:cover;
+    color: #fff;
+    height: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding-left: 50px;
+    padding-right: 50px;
+    margin-bottom: 40px;
+    justify-content: center;
+    text-align: center;
+    background: rgba(black, 0.5);
+    background:
+    linear-gradient(
+    rgba(0, 0, 0, 0.5),
+    rgba(0, 0, 0, 0.5)
+    ),
+    url('../image/banner/IMG_3675.jpg');
+}
+
+
+
+.bannerinfo{
+    text-align: center;
+    justify-items: center;
+    padding-top: 250px;
+    
+}
+
+.bannerinfo h1{
+    font-size: 35px;
+}
+
+.bannerlink{
+    display: flex;
+    grid-gap: 2rem;
+    justify-content: center;
+    margin-top: 26px;
+}
+
+/* New button try */
+
+.banner-button{
+    border: none;
+    color: white;
+    padding: 16px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+    
+}
+
+.afb-button{
+    background-color: white; 
+    color: black; 
+    border: 2px solid #2461b2;
+    font-family: 'Noto Sans', sans-serif;
+    font-family: 'Prompt', sans-serif;
+}
+
+.afb-button:hover{
+    background-color: #2461b2;
+    color: white;
+    text-decoration: underline;
+}
+
+/* old button */
+/*
+.contain-a{
+    border: 1px solid black;
+    padding: 15px;
+    width: 120px;
+    transition: .3s ease-in-out;
+    background-color: #da1717;
+    cursor: pointer;
+}
+
+.contain-a:hover{
+    border: 1px solid rgb(0, 183, 229);
+    padding: 20px;
+    background: rgb(0, 183, 229);
+}
+
+.contain-a:hover a{
+    color: #fff;
+}
+*/
+.bannerpic{
+    display: flex;
+    align-self: center;
+}
+
+.bannerpatong{
+    height: auto;
+    margin-bottom: 15px;
+}
+.bannerpatong , .bannertonrak{
+    width: 50%;
+    height: auto;
+    display: block;
+    margin-top: 45px;
+    text-align: center ;
+}
+
+.bannerpatong img{
+    width: 60%;
+    margin-top: 50px;
+    box-shadow: 0 0 20px 10px #ffffff;
+}
+
+.bannertonrak{
+    text-align: left;
+}
+
+.bannertonrak img{
+    width: 50%;
+    margin-top: 160px;
+    box-shadow: 0 0 20px 10px #ffffff;
+    
+}
+
+
+
+/* ---------------Start Info------------ */
+.info h1 {
+    margin-left: 10%;
+    display: flex;
+    justify-content: left;
+    /* width: 80%; */
+}
+.info img {
+    height: 300px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px #333;
+}
+
+.social_button{
+    cursor: pointer;
+}
+
+.so_wrapper .so_button{
+    display: inline-block;
+    height: 60px;
+    width: 60px;
+    float: left;
+    margin: 0 5px;
+    background:#fff;
+    border-radius: 50px;
+    overflow: hidden;
+    cursor: pointer;
+    box-shadow: 0 10px 10px rgba(0,0,0,0.1);
+    transition: all 0.3s ease-out;
+}
+
+.so_wrapper .so_button:hover{
+    width: 200px;
+}
+
+.so_wrapper .so_button .so_icon{
+    display: inline-block;
+    height: 60px;
+    width: 60px;
+    border-radius: 50px;
+    box-sizing: border-box;
+    line-height: 60px;
+    cursor: pointer;
+    text-align: center;
+}
+
+.so_wrapper .so_button:nth-child(1):hover .so_icon{
+    background: #4267B2;
+}
+
+.so_wrapper .so_button:nth-child(2):hover .so_icon{
+    background: #E1306C;
+}
+
+
+.so_wrapper .so_button .so_icon i{
+    font-size: 25px;
+    line-height: 60px;
+   
+}
+
+.so_wrapper .so_button span{
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 60px;
+    margin-left: 10px;
+}
+
+
+/* ---------------End Info-------------- */
+
+
+/*-------------Strat info_peeeeeeeeeeeeeeee ---------------------------*/
+.info_Pe {
+    padding: 20px;
+    margin-top: -38px;
+    height: 400px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.info_Pe_image {
+    margin-top: 20px;
+    margin-left: 120px;
+    display: flex;
+    /* align-items: center; */
+    justify-content: center;
+}
+.info_Pe_image img {
+    margin-top: 8%;
+}
+.info_Pe_data {
+    padding: 20px;
+    display: block;
+    /* font-size: medium; */
+    justify-content: center;
+    align-items: center;
+}
+
+.info_Pe_data img {
+    height: 50px;
+}
+.info_Pe_data p {
+    line-height: 30px;
+}
+.IG {
+    display: flex;
+}
+.IG p {
+    padding-left: 10px;
+}
+
+/*-------------End info_peeeeeeeeeeeeeeee -----------------------------*/
+
+
+/* Tonrak_Information */
+.tonrak-info{
+    display: grid;
+    grid-template-columns: 1fr 1fr  ;
+    padding: 20px;
+    background-color: #f0f0f0;
+}
+
+.ton_info_data{
+    justify-content: center;
+    text-align: center;
+    
+}
+
+#info_tonrak_text{
+    margin-left: 0%;
+    justify-content: center;
+}
+#tonrak-pic{
+    /* 
+    width: 372.4px;
+    height: 496.44px;
+    */
+    width: 418.95px;
+    height: 594.855px;
+}
+.ton_info{
+   
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-left: 50px;
+}
+#icon_tonrak {
+    display: inline-block;
+    
+}
+/*  Tonrak_Information_ended */
+
+/* ************ Info boom ***************** */
+.info_boom {
+    padding: 20px;
+    margin-top: 20px;
+    height: 400px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.info_boom img{
+    width: 350px;
+    height: 450px;
+}
+
+.info_boom_image {
+    margin-top: 20px;
+    margin-left: 120px;
+    display: flex;
+    /* align-items: center; */
+    justify-content: center;
+}
+.info_boom_data {
+    padding: 20px;
+    display: block;
+    /* font-size: medium; */
+    justify-content: center;
+    align-items: center;
+}
+
+.info_boom_data p {
+    line-height: 30px;
+}
+
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    animation: fadeInDown 0.4s;
+}
+
+@keyframes fadeInDown {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+/* ************* copyright ************ */
+.copyright{
+    width: 100%;
+    height: 60px;
+    background: #2461b2;
+    margin: 0;
+    margin-top: 120px;
+}
+.copyright-flex {
+    display: flex;
+    height: 40px;
+    color: #ffffff;
+}
+.copytext{
+    justify-self: flex-start;
+    align-self: center;
+    margin-left: 50px;
+    
+}
+
+/************ HamburgerMenu *************/
+.ham-menu {
+    display: inline-block;
+    cursor: pointer;
+    position: absolute;
+    right: 1rem;
+    padding-top: 10px;
+    margin-right: 40px;
+  }
+  
+  .bar1, .bar2, .bar3 {
+    width: 35px;
+    height: 5px;
+    background-color: white;
+    margin: 6px 0;
+    transition: 0.4s;
+  }
+  
+  /* Rotate first bar */
+  .change .bar1 {
+    transform: translate(0, 11px) rotate(-45deg);
+  }
+  
+  /* Fade out the second bar */
+  .change .bar2 {opacity: 0;}
+  
+  /* Rotate last bar */
+  .change .bar3 {
+    transform: translate(0, -11px) rotate(45deg);
+  }
+  
+  .menu-active {
+    display: block !important;
+  }
+
+/* ********** Responesive************** */
+/* -------For Desktop----- */
+@media only screen and (min-width: 904px){
+    .ham-menu{
+        display: none;
+    }
+
+    #patong2{
+        display: none;
+    }
+    #boom2{
+        display: none;
+    }
+
+    #tonrak-pic{
+        width: 400.95px;
+        height: 486.855px;
+    }
+
+    .tonrak-info-image{
+        margin-left: 10px;
+    }
+
+    .info_boom_data{
+        margin-left: 20px;
+    }
+
+}
+@media only screen and (max-width: 904px) {
+    .menu{
+        display: none;
+    }
+
+    .nav-wrapper{
+        padding: 0 1rem;
+        height: auto;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    #navbar ul{
+        width: 100%;
+    }
+
+    #navbar li {
+        display: block;
+        margin: 1rem 0;
+        padding: 1rem 0.5rem;
+    }
+
+    .menu li:hover {
+        background-color: #183f72;
+    }
+
+    .menu-active{
+        display: block;
+    }
+
+    #patong2{
+        display: none;
+    }
+}
+@media only screen and (max-width: 768px){
+    /* ---------Strat--------- */
+    .banner {
+        grid-template-columns: 1fr;
+        margin-bottom: 100px;
+        height: 600px;
+    }
+    .bannerpic {
+        display: none;
+    }
+
+    /* ---------End--------- */
+    .info h1{
+        margin-top: 0px;
+    }
+
+    .info_Pe{
+        margin-bottom: 20px;
+    }
+
+    .info_Pe_image{
+        margin-left: 30px;
+        width: 90%;
+    }
+
+    .info_Pe_data{
+        margin-left: 30px;
+        font-size: 14px 
+    }
+    .so_wrapper {
+        margin-left: -20px;
+    }
+    #patong1{
+        display: none;
+    }
+    #patong2{
+        display: block;
+    }
+    /* **********tonrak********** */
+    #icon_tonrak {
+        margin-left: 47px;
+    }
+    .ton_info_data{
+        margin-left: 50px;
+        font-size: 14px;
+
+    }
+
+    #tonrak-pic{
+        width: 300px;
+        height: 450px;
+    }
+
+    .tonrak-info-image{
+        width: 100%;
+        justify-content: center;
+        display: flex;
+    }
+
+    /* **********boom********** */
+    .info_boom{
+        margin-top: 30px;
+    }
+    .info_boom img{
+        width: 300px;
+        height: 420px; 
+    }
+
+    .info_boom_image{
+        margin-left: 30px;
+        width: 100%;
+    }
+
+    .info_boom_data{
+        font-size: 14px;
+        padding-top: 0px;
+        margin-left: 30px;
+    }
+    
+    #boom2{
+        display: block;
+    }
+
+    #boom1{
+        display: none;
+    }
+
+    .copyright{
+        font-size: small;
+    }
+}
+
+@media only screen and (max-width: 576px){
+    /* ----------responsive banner---------- */
+    /* ---------Strat--------- */
+    .banner {
+        grid-template-columns: 1fr;
+        margin-bottom: 100px;
+        height: 600px;
+    }
+    .bannerpic {
+        display: none;
+    }
+
+    /* ---------End--------- */
+
+    .left{
+        margin-left: 10px;
+    }
+    .info_Pe,.tonrak-info,.info_boom {
+        grid-template-columns: 1fr;
+        justify-items: center;
+        text-align: center;
+        margin-bottom: 360px;
+    }
+    .img_profile {
+        display: flex;
+    }
+    .info h1{
+        margin-left: 0;
+        margin: 0;
+        width: 100%;
+        justify-content: center;
+        padding: 0px;
+        /* margin-left: auto !important; */
+    }
+    .info_boom_data {
+        padding: 0;
+        margin: 0;
+    }
+    .info_Pe_image{
+        margin-left: 0px;
+    }
+
+    .info_Pe_image img{
+        justify-items: center
+    }
+
+    .so_wrapper{
+        display: inline-block;
+        text-align: center;
+        margin-left: auto !important;
+        padding-bottom: 50px;
+    }
+    /* ***********Tonrak ***************** */
+    .tonrak-info{
+        margin-bottom: 60px;
+        padding-bottom: 60px;
+    }
+    .ton_info_data {
+        margin-left: 0px;
+    }
+    .ton_info{
+        margin-left: 0px;
+    }
+    /* **********Boom************* */
+    .info_boom_image{
+        margin-left: 0px    ;
+    }
+    .info_boom{
+        margin-bottom: 575px;
+    }
+
+    .info_boom_data{
+        padding-top: 30px;
+        width: 100%;
+        padding-bottom: 0px;
+    }
+    .copyright{
+        font-size: small;
+    }
+}

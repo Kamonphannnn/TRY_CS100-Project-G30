@@ -1,0 +1,175 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+footer{
+    margin: 0;
+}
+#navbar{
+    overflow: hidden;
+    background-color: #2461b2;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.logo{
+    margin-left: 10;
+    color: white;
+}
+
+#navbar ul{
+    list-style-type: none;
+    margin: 0;
+    padding:0px;
+    text-align: center;
+}
+
+#navbar li {
+    display: inline;
+    margin-right: 20px;
+    padding:0px 15px 0px;
+}
+
+#navbar a{
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    transition: .3s ease-in-out;
+}
+
+#navbar a:hover {
+    border-bottom: 2.5px solid white;
+    padding: 8px;
+}
+
+.left{
+    display: flex;
+    margin-left: 50px;
+}
+
+.right{
+    display: flex;
+    margin-right: 100px;
+}
+
+
+
+
+/* ------form block----Start---  */
+::placeholder {
+    color:#888;
+    opacity: 0.6;
+}
+
+.form{
+    margin-top: 5%;
+}
+
+.form-container {
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    /* border: 1px solid red; */
+    border-radius: 30px;
+}
+
+.form-container h1 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+  
+
+.form-group {
+    margin-bottom: 20px;
+}
+  
+.form-group label {
+    display: block;
+    font-weight: bold;
+}
+  
+.form-group input[type="text"],
+.form-group input[type="email"],
+.form-group input[type="tel"],
+.form-group select,
+.form-group textarea,
+.form-group input[type="datetime-local"] {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+  
+.form-group textarea {
+    resize: vertical;
+}
+  
+.form-group select {
+    width: 100%;
+}
+  
+.form-group input[type="submit"] {
+    background-color: #4caf50;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+  
+.form-group small {
+    font-size: 12px;
+    color: #888;
+}
+  
+.form-group {
+    position: relative;
+}
+
+.error {
+    color: red;
+  display: block;
+    margin-top: 5px;
+}
+
+
+
+/* ------form block----End--- */
+
+
+
+
+@keyframes fadeInDown {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+/* ************* copyright ******Strat****** */
+.copyright{
+    width: 100%;
+    height: 40px;
+    background: #2b2b2b;
+    margin: 0;
+}
+.copyright-flex {
+    display: flex;
+    height: 40px;
+    color: #979797;
+}
+.copytext{
+    justify-self: flex-start;
+    align-self: center;
+    margin-left: 50px;
+}
+/* ************* copyright ******END****** */

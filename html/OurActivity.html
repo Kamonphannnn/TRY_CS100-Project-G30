@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <link rel="stylesheet" href="../css/OurActivity.css">
+        <link rel="stylesheet" href="../css/style.css">
+        <link rel="stylesheet" href="../css/elementadded.css">
+    </head>
+    <body>
+        <header>
+        
+            <div class="container"  >
+                <div class="nav-wrapper" id="navbar"style="z-index: 2;">
+                    <div class="left">
+                        <h3 class="logo">
+                            ปูนพร้อมก่อ สุดหล่อพร้อมยัง
+                        </h3>
+                    </div>
+                        <ul class="menu" id="myMenu">
+                            <li><a href="../index.html">Home</a></li>
+                            <li><a href="../index.html#members">Members</a></li>
+                            <li><a href="../html/OurActivity.html">Our activities</a></li>
+                            <li><a href="https://drive.google.com/file/d/1z4ppSxmN6A6XSvfpVWq15ll4weuFnOU8/view?usp=drivesdk" target="_blank">Donate</a></li>
+                        </ul>
+                    <div class="ham-menu" onclick="toggleHam(this)">
+                        <div class="bar1"></div>
+                        <div class="bar2"></div>
+                        <div class="bar3"></div>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+
+            <div class="form" style="z-index: 1;">
+                <!-- Form Container -->
+                <div class="form-container" id="form_spot">
+                    <h1>Our Activities</h1>
+                    <!-- Main Form -->
+                    <form id="myForm" action="#" method="post">
+                        <!-- Firstname and Lastname Field -->
+                        <div class="form-group">
+                            <label for="fullname">Firstname and Lastname</label>
+                            <input type="text" id="fullname" name="fullname" placeholder="Ex. Kamonphan Kanthayod" required/>
+                            <small>Only enter your first name and last name, middle name is not necessary.</small>
+                            <span id="fullnameError" class="error"></span>
+                        </div>
+                        
+                        <!-- Student ID Field -->
+                        <div class="form-group">
+                            <label for="studentID">Student ID</label>
+                            <input type="text" id="studentID" name="studentID" placeholder="Ex. 6609520116" required />
+                            <small>Please enter your 10-digit student ID.</small>
+                            <span id="studentIDError" class="error"></span>
+                        </div>
+          
+                        <!-- University Email Field -->
+                        <div class="form-group">
+                            <label for="email">University Email</label>
+                            <input type="email" id="email" name="email" placeholder="Ex. kamonphan.kan@dome.tu.ac.th" required />
+                            <small>Please provide your university email in the format "xxxxxx.yyy@dome.tu.ac.th".</small>
+                            <span id="emailError" class="error"></span>
+                        </div>
+    
+                        <div class="form-group">
+                            <label for="phone">Telephone Number</label>
+                            <input type="tel" id="phoneNumber" name="phone" placeholder="Ex. 065426xxxx" required />
+                            <small>Please enter your 10-digit telephone number.</small>
+                            <span id="phoneError" class="error"></span>
+                        </div>
+    
+                        <div class="form-group">
+                        <label for="gender">Gender</label>
+                            <select id="gender" name="gender" required>
+                                <option value="" disabled selected>Select an option</option>
+                                <option value="male">Male</option>
+                                <option value="female">Female</option>
+                                <option value="other">LGBTQ+</option>
+                            </select>
+                        </div>
+    
+                        <!-- Work/Activity Title Field -->
+                        <div class="form-group">
+                            <label for="workTitle">Work/Activity Title</label>
+                            <input type="text" id="workTitle" name="workTitle" placeholder="Ex. CSTU Firstmeet 2023" required/>
+                        </div>
+
+                        <!-- Type of Work/Activity Field -->
+                        <div class="form-group">
+                            <label for="activityType">Type of Work/Activity</label>
+                            <select id="activityType" name="activityType">
+                              <option value="" disabled selected>Select an option</option>
+                            </select>
+                          </div>
+                        
+                        <!-- Image -->
+                        <div class="form-group">
+                            <label for="image">รูปภาพ :</label>
+                            <input type="file" id="image" name="image" accept="image/*" required onchange="previewImage()">
+                        </div>
+                        
+                        <!-- Academic Year Field -->
+                        <div class="form-group">
+                            <label for="academicYear">Academic Year</label>
+                            <select id="academicYear" name="academicYear" required>
+                                <option value="" disabled selected>Select an option</option>
+                                <option value="2561">2561</option>
+                                <option value="2562">2562</option>
+                                <option value="2563">2563</option>
+                                <option value="2564">2564</option>
+                                <option value="2565">2565</option>
+                                <option value="2566">2566</option>
+                                <option value="2567">2567</option>
+                                <option value="2568">2568</option>
+                                <option value="2569">2569</option>
+                            </select>
+                        </div>
+    
+                        <!-- Semester Field -->
+                        <div class="form-group">
+                            <label for="semester">Semester</label>
+                            <select id="semester" name="semester" required>
+                                <option value="" disabled selected>Select an option</option>
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="Summer">Summer</option>
+                            </select>
+                        </div>
+    
+                        <!-- Start Date/Time Field -->
+                        <div class="form-group">
+                            <label for="startDate">Start Date/Time</label>
+                            <input type="datetime-local" id="startDate" name="startDate" required/>
+                        </div>
+    
+                        <!-- End Date/Time Field -->
+                        <div class="form-group">
+                            <label for="endDate">End Date/Time</label>
+                            <input type="datetime-local" id="endDate" name="endDate" required/>
+                        </div>
+    
+                        <!-- Location Field -->
+                        <div class="form-group">
+                            <label for="location">Location</label>
+                            <input type="text" id="location" name="location" placeholder="Ex. Thammasat Stadium" required/>
+                        </div>
+    
+                        <!-- Description Field -->
+                        <div class="form-group">
+                            <label for="description">Description</label>
+                            <textarea id="description" name="description" rows="4" placeholder="Ex. Very very happy!!"></textarea>
+                        </div>
+    
+                        <!-- Submit Button -->
+                        <div class="form-group">
+                            <input type="submit" value="Submit" />
+                        </div>
+                    </form>
+                </div>
+    
+            </div>
+
+           
+        </div>
+        <footer id="footer">
+            <div class="copyright">
+                <div class="container">
+                    <div class="copyright-flex">
+                        <div class="copytext">
+                            <p>Copyright @2023 </p>
+                        </div>
+                    </div>
+                    <!-- copyright-grid -->
+        
+                </div>
+                <!-- container -->
+        
+            </div>
+            <!-- copyright -->
+        </footer>
+        
+        <script src="https://kit.fontawesome.com/137eea12a2.js" crossorigin="anonymous"></script>    
+        <script src="../js/script_form.js"></script>
+        <script src="../js/script.js"></script>
+    </body>
+</html>
