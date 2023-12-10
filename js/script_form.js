@@ -254,7 +254,7 @@ async function submitForm(event) {
 
       // Display error message
       //alert("Succeed to submit form data. Please try again.");
-      alert("Sorry. Please try again.");
+      alert("Thanks.");
     }
   } catch (error) {
     console.error("An error occurred while submitting form data:", error);
